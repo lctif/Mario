@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page avec Iframes</title>
+    <style>
+        .frame-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .frame-container iframe {
+            flex: 1 1 25%;
+            height: 300px; /* Ajuste la hauteur selon tes besoins */
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="frame-container">
+        <iframe src="page2.html" name="page2"></iframe>
+        <iframe src="page3.html" name="page3"></iframe>
+        <iframe src="page4.html" name="page4"></iframe>
+    </div>
+    
+    <div class="frame-container">
+        <iframe src="page5.html" name="page5"></iframe>
+        <iframe src="page6.html" name="page6"></iframe>
+    </div>
+
+</body>
+</html>

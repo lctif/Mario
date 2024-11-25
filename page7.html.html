@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 20px;
+        }
+        h1, h2 {
+            color: #1E90FF; /* Bleu */
+        }
+        .section-title {
+            border-bottom: 2px solid #1E90FF; /* Bleu */
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+        .profile img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 100px;
+            height: 100px;
+        }
+        .centered-title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #1E90FF; /* Bleu */
+        }
+        .card {
+            margin-bottom: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        @keyframes fadeInCascade {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in-cascade {
+            opacity: 0;
+            animation: fadeInCascade 0.6s forwards;
+        }
+        .fade-in-cascade:nth-child(1) { animation-delay: 0.5s; }
+        .fade-in-cascade:nth-child(2) { animation-delay: 1s; }
+        .fade-in-cascade:nth-child(3) { animation-delay: 1.5s; }
+        .fade-in-cascade:nth-child(4) { animation-delay: 2s; }
+        .fade-in-cascade:nth-child(5) { animation-delay: 2.5s; }
+    </style>
+</head>
+<body>
+    <div class="container mt-5 fade-in-cascade">
+        <div class="centered-title">Curriculum vitæ</div>
+        
+        <div class="text-center mb-4 fade-in-cascade">
+            <h1>DEGBO Mario</h1>
+            <p><strong>Email:</strong> mariodegbo@gmail.com | <strong>Téléphone:</strong> +229 58-07-82-34</p>
+        </div>
+        
+        <div class="card fade-in-cascade">
+            <div class="card-body">
+                <h2 class="section-title">Profil</h2>
+                <div class="d-flex align-items-center profile">
+                    <img src="R.jpg" alt="Photo de profil" class="img-fluid">
+                    <p>Bonjour, je me nomme DEGBO Mario. Je suis étudiante en première année à l'université Pigier Bénin en RÉSEAU GÉNIE LOGICIEL (RGL). J'ai 18 ans.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card fade-in-cascade">
+            <div class="card-body">
+                <h2 class="section-title">Diplômes</h2>
+                <ul class="list-unstyled pl-3">
+                    <li>CEP</li>
+                    <li>BEPC</li>
+                    <li>BAC</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card fade-in-cascade">
+            <div class="card-body">
+                <h2 class="section-title">Compétences</h2>
+                <ul class="list-unstyled pl-3">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>PHP</li>
+                    <li>Développement de site web</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card fade-in-cascade">
+            <div class="card-body">
+                <h2 class="section-title">Compétences Linguistiques</h2>
+                <ul class="list-unstyled pl-3">
+                    <li>Français: Intermédiaire</li>
+                    <li>Anglais: Courant</li>
+                    <li>Fon: Courant</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

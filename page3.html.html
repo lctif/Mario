@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma 3e page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            text-align: center;
+            background-color: #f8f9fa;
+            padding-top: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+        h1 {
+            color: white;
+        }
+        h2, h3 {
+            margin-top: 20px;
+            padding: 10px;
+            color: black;
+            background-color: #87CEEB;
+            border: 2px solid #87CEEB;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        h2:hover, h3:hover {
+            background-color: #00bfff;
+            transform: translateY(-5px);
+        }
+        main {
+            text-align: center;
+            margin-top: 20px;
+        }
+        ul {
+            text-align: left;
+            display: inline-block;
+            margin-top: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        ul:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .list-group-item {
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .list-group-item:hover {
+            background-color: #f0f4f8;
+            transform: translateX(10px);
+        }
+        @keyframes fadeInCascade {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in-cascade {
+            opacity: 0;
+            animation: fadeInCascade 0.6s forwards;
+        }
+        .fade-in-cascade:nth-child(1) { animation-delay: 0.5s; }
+        .fade-in-cascade:nth-child(2) { animation-delay: 1s; }
+        .fade-in-cascade:nth-child(3) { animation-delay: 1.5s; }
+        .fade-in-cascade:nth-child(4) { animation-delay: 2s; }
+        .fade-in-cascade:nth-child(5) { animation-delay: 2.5s; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="mb-4 fade-in-cascade">
+            <img src="L.png" alt="Logo Pigier Bénin" class="logo">
+            <h1>Ma 3e page</h1>
+            <img src="L.png" alt="Logo Pigier Bénin" class="logo">
+        </header>
+        
+        <main class="fade-in-cascade">
+            <h2>Pigier-Bénin</h2>
+            <p class="lead">Pigier Bénin est une institution éducative renommée, spécialisée dans la formation professionnelle et technique. Fondée dans le but de préparer les étudiants au marché du travail, elle offre divers programmes allant de la gestion des affaires au secrétariat. L'école met un accent particulier sur l'acquisition de compétences pratiques et théoriques, favorisant ainsi l'employabilité des diplômés. Grâce à ses partenariats avec des entreprises locales et internationales, Pigier Bénin garantit des stages et des opportunités d'emploi à ses étudiants. Située au cœur de Cotonou, l'école dispose de ressources modernes et de professeurs qualifiés pour une expérience d'apprentissage optimale. Pigier Bénin se distingue par son approche pédagogique innovante et son engagement envers l'excellence académique. Elle est devenue un choix privilégié pour ceux qui cherchent à exceller dans leur carrière professionnelle.</p>
+            <h3 class="fade-in-cascade">Liste des Fidèles:</h3>
+            <ul class="list-group fade-in-cascade">
+                <li class="list-group-item">RGL : Réseau Génie Logiciel</li>
+                <li class="list-group-item">RMS : Réseau Mobilité Sécurité</li>
+                <li class="list-group-item">GTL : Gestion Technique et Logistique</li>
+                <li class="list-group-item">CG : Comptabilité et Gestion</li>
+                <li class="list-group-item">BF : Banque et Finance</li>
+            </ul>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

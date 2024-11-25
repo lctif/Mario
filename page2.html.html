@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page2.html</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f4f8; /* Couleur de fond bleu clair */
+            text-align: center;
+            padding-top: 50px;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            width: 80px;
+            height: auto;
+        }
+        .logo-left {
+            left: 20px;
+        }
+        .logo-right {
+            right: 20px;
+        }
+        .welcome {
+            font-weight: bold;
+            font-size: 3em;
+            margin-top: 50px;
+            color: #007bff;
+        }
+        .section-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #343a40;
+            margin-top: 20px;
+        }
+        .contact-info, .diplomas, .description {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        .diplomas ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .diplomas li {
+            margin-top: 10px;
+        }
+        .card {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            border-radius: 10px;
+        }
+        .btn-animated {
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            overflow: hidden;
+            transition: background-color 0.3s;
+        }
+        .btn-animated:hover {
+            background-color: #0056b3;
+        }
+        .btn-animated::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 300%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s;
+        }
+        .btn-animated:hover::before {
+            left: 100%;
+        }
+        @keyframes fadeInCascade {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in-cascade {
+            opacity: 0;
+            animation: fadeInCascade 0.6s forwards;
+        }
+        .fade-in-cascade:nth-child(1) { animation-delay: 0.5s; }
+        .fade-in-cascade:nth-child(2) { animation-delay: 1s; }
+        .fade-in-cascade:nth-child(3) { animation-delay: 1.5s; }
+        .fade-in-cascade:nth-child(4) { animation-delay: 2s; }
+    </style>
+</head>
+<body class="container">
+    <div class="row">
+        <div class="col-12 fade-in-cascade">
+            <img src="L.png" alt="Logo" class="logo logo-left">
+            <img src="L.png" alt="Logo" class="logo logo-right">
+            <p class="welcome">Bienvenue sur mon site</p>
+        </div>
+    </div>
+
+    <div class="row mt-5 justify-content-center">
+        <div class="col-12 fade-in-cascade">
+            <div class="section-title">État Civil</div>
+        </div>
+        <div class="col-md-8 col-lg-6 fade-in-cascade">
+            <div class="card">
+                <div class="contact-info">
+                    <p>Nom : DEGBO</p>
+                    <p>Prénom : Mario</p>
+                    <p>Contact : 91717607</p>
+                    <div id="photo">
+                        <img src="R.jpg" alt="Photo" class="img-fluid rounded mx-auto d-block" style="width: 150px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-12 fade-in-cascade">
+            <div class="section-title">Mes Diplômes</div>
+        </div>
+        <div class="col-md-8 col-lg-6 mx-auto fade-in-cascade">
+            <div class="card diplomas">
+                <ul class="list-unstyled">
+                    <li>CEP</li>
+                    <li>BEPC</li>
+                    <li>BAC</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-8 col-lg-6 mx-auto fade-in-cascade">
+            <div class="card description">
+                <p>Moi c'est Mario, je suis étudiante à l'université Pigier Bénin en RGL. J'ai 18 ans, merci d'avoir visité mon site 🥲</p>
+                <a href="page7.html" class="btn-animated mt-3">More</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
